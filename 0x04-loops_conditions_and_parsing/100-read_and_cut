@@ -7,4 +7,4 @@
 while read passwd
 do
 	echo "$passwd" | cut -d ":" -f1,3,6
-done < "$FILE"
+done < "/etc/passwd"
