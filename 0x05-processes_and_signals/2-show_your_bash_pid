@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
-# Bash script that displays a list of currently running processes
-# Show all processes, for all users
-# Including those which might not have a TTY
-# Display in a user-oriented format
+# Bash script that displays lines containing the bash word
+# shellcheck disable=SC2009
 
-ps -auxf
+ps -aux | grep bash
