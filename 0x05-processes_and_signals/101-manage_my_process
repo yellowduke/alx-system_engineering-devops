@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#  Bash (init) script that manages `manage_my_process` with start/stop/restart argument
+
+file="/var/run/my_process.pid"
+
+
