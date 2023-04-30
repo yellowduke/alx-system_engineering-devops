@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 # Displays the content of the file `/etc/passwd`
 
-while IFS=":" read username password uid gid info home shell;
+passwd="/etc/passwd"
+
+while IFS=":" read -r username password uid gid info home shell;
 do
-	echo ""The user $user is part of the $gid gang, lives in $home and \ rides $shell. $uid's place is protected by the passcode $password, \ more info about the user here: $info"
-done < "/etc/passwd"
+	echo "The user $user is part of the $gid gang, lives in $home and \ rides $shell. $uid's place is protected by the passcode $password, \ more info about the user here: $info"
+done < "passwd"
