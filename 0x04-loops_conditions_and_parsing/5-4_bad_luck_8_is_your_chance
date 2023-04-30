@@ -11,7 +11,7 @@ do
 	if (( i == 4 ));
 	then
 		echo "bad luck"
-	elif (( i == i));
+	elif (( i == 8));
 	then
 		echo "good luck"
 	else
